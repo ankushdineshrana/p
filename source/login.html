@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Predictive Drift Login</title>
+    <link rel="stylesheet", href="style.css" >
+    
+</head>
+<body>
+    <div class="loginbox">
+    <img src="avatar.png" class="avatar">
+        <h1>Please Login</h1>
+        <form name="loginform" onsubmit="return validate();" action="/success" method="post">
+            <p>Username</p>
+            <input id="username" type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input id="password" type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="" value="Login">
+            
+        </form>
+        <script>
+                function validate() {
+            console.log("hello");
+            var uname=document.loginform.username.value;
+            var pword=document.loginform.password.value;
+
+            if((uname=="admin")&&(pword=="admin")){
+                return true;
+            }
+            else{
+                alert("Login was unsuccessful!");
+                return false;
+            }
+
+            console.log(myInput);
+            }
+        </script>
+    </div>
+
+    
+
+
+
+</body>
+</html>

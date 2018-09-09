@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Drill Analytics</title>
+
+	<!-- stylesheets -->
+	<link href="assets/fonts/font-roboto.css" rel="stylesheet">
+	<link href="assets/bootstrap/bootstrap4-alpha3.min.css" rel="stylesheet">
+	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/web-analytics/style.css" rel="stylesheet">
+
+	<!-- scripts -->
+	<script src="assets/jquery/jquery-3.1.0.min.js"></script>
+	<script src="assets/tether/tether.min.js"></script>
+	<script src="assets/bootstrap/bootstrap4-alpha3.min.js"></script>
+	<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script src="assets/web-analytics/overview.js"></script>
+
+</head>
+
+<body>
+	<!-- header -->
+	<nav class="navbar navbar-fixed-top" id="header">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<div id="sidebar-toggle-button">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<div class="brand">
+					<a href="web-analytics-overview.html">
+						<span class="hidden-xs-down m-r-3">Drill Analytics</span><span class="lead"></span>
+					</a>
+				</div>
+				<div class="custom-select" style="width:200px;">
+						<select id="myselect">
+						<option value="" selected disabled hidden>Select Drill Id</option>
+						  <option value="1">Drill101</option>
+						  <option value="2">Drill102</option>
+						  <option value="3">Drill103</option>
+						 
+						</select>
+					  </div>
+				<span id="mybtn">  <button name="btnsubmit" type="button">Submit</button></span>
+
+			</div>
+		</div>
+		
+	</nav>
+	
+
+	<!-- page-content-wrapper -->
+	<div class="page-content-toggle" id="page-content-wrapper">
+		<div class="container-fluid">
+
+		
+
+			<!-- 2nd row -->
+			<div class="row m-b-1">
+				<div class="col-md-12">
+					<div class="card card-block">
+						<h4 id="report" class="card-title m-b-2">Predictive Analytics Report</h4>
+						<span class="tag custom-tag hidden-sm-down">Drill Health Status</span>
+						<div class="row">
+							<div class="col-md-4">
+								<div id="annual-revenue-by-category-pie-chart"></div>
+							</div>
+							<div class="col-md-8 hidden-sm-down">
+								<div id="monthly-revenue-by-category-column-chart"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+		<!-- /.container-fluid -->
+
+	</div>
+	<!-- /page-content-wrapper -->
+
+</body>
+
+</html>
